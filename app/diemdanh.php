@@ -9,16 +9,12 @@ class diemdanh extends Model
     protected $table="diemdanh";
      public function sinhvien()
     {
-    	return $this->belongsTo('sinhvien','sinhvien_id','id');
+    	return $this->belongsTo('App/sinhvien','sinhvien_id','id');
     }
 
-     public function sinhvien()
-    {
-    	return $this->belongsTo('sinhvien','sinhvien_id','id');
-    }
 
      public function phancong()
     {
-    	return $this->belongsTo('phancong','phancong_id','id');
+    	return $this->belongsTo('App/phancong','phancong_id','id');
     }
 }
